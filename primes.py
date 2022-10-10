@@ -42,6 +42,9 @@ def is_prime(number: int) -> bool:
 
 
 def primes(number_of_primes: int) -> [int]:
+    if (number_of_primes <= 0):
+        raise ValueError()
+    
     prime_arr : [int] = []
     current_number : int = 2
     while len(prime_arr) < number_of_primes:
