@@ -2,7 +2,7 @@
   "tests": [
     {
       "name": "Automated tests",
-      "setup": "sudo -H pip3 install pytest",
+      "setup": "sudo -H pip3 install pytest; gcc -shared primes.c -O3 -o primes_impl.so",
       "run": "pytest",
       "input": "",
       "output": "",
