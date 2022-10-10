@@ -13,6 +13,7 @@ def safe_include_impl(filename: str):
     return ctypes.cdll.LoadLibrary(filename)
 
 
+
 _prime_impl = safe_include_impl("primes_impl.so")
 
 def primes(number_of_primes: int) -> [int]:
