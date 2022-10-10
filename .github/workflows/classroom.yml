@@ -12,7 +12,6 @@ jobs:
     name: Autograding
     runs-on: ubuntu-latest
     steps:
-
       - name: compile_and_build
       run : gcc -shared primes.c -O3 -o primes_impl.so
       - uses: actions/checkout@v2
